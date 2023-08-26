@@ -1,0 +1,156 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/*
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+*/
+
+:root {
+  --p-1: hsl(158, 36%, 37%);
+  --p-2: hsl(30, 38%, 92%);
+  --n-1: hsl(212, 21%, 14%);
+  --n-2: hsl(228, 12%, 48%);
+  --n-3: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 14px;
+  background-color: var(--p-2);
+}
+
+/* Main CSS */
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.image {
+  background-image: url("images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.content {
+  background-color: var(--n-3);
+  width: 300px;
+  height: 500px;
+  border-radius: 0px 10px 10px 0px;
+  padding: 2.5rem;
+}
+
+.content p,
+.product-old-price {
+  color: var(--n-2);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.product-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 35px;
+  margin: 2rem 0rem;
+}
+
+.product-bio {
+  line-height: 25px;
+  margin-bottom: 2rem;
+}
+
+.product-price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.new-product-price {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  color: var(--p-1);
+}
+
+.cta-btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  background-color: var(--p-1);
+  color: var(--n-3);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.cta-btn:active {
+  background-color: hsl(158, 36%, 27%);
+}
+
+.cta-btn img {
+  margin-right: .5rem;
+  vertical-align: middle;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media */
+@media screen and (max-width: 412px) {
+
+  .image {
+    background-image: url("images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 375px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .content {
+    width: 375px;
+    height: 500px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+}
