@@ -21,3 +21,21 @@ Your users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover and focus states for interactive elements
 
+### Links
+
+- Solution URL: [solution]([https://your-solution-url.com](https://github.com/egyzilla/product-preview-card))
+- Live Site URL: [live]([https://your-live-site-url.com](https://egyzilla.github.io/product-preview-card/))
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+
+## Author
+
+- Frontend Mentor - [@egyzilla](https://www.frontendmentor.io/profile/egyzilla)
+- Instagram - [@yourusername](https://www.instagram.com/egyzilla/)
+
